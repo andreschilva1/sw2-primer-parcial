@@ -6,7 +6,7 @@
         <title>Medicine</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{{ asset('style/ticket.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/ticket.css') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body class="body">
@@ -42,7 +42,7 @@
                         </form>
                     </div>
                   </div>
-                  <img src="doctors.png" class="img-doctors rounded" alt="Doctors" style="width: 400px;">
+                  <img src="{{ asset('img/doctors.png') }}" class="img-doctors rounded" alt="Doctors" style="width: 400px;">
             </div>
         </section>
 
