@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Routing\RouteAction;
+use App\Http\Controllers\FacturaController;
+use App\Http\Controllers\FichaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/ficha', function () {
-    return view('ficha/index');
-})->name('ficha.index');
+Route::get('/ficha', [FichaController::class,'index'])->name('ficha.index');
 
-Route::get('/ficha/create', function() {
-    return view('ficha/create');
-})->name('ficha.create');
+Route::get('/ficha/create',[FichaController::class,'create'])->name('ficha.create');
+
+
+Route::get('/factura', [FacturaController::class,'index'])->name('factura.index');
+
