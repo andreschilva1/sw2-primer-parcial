@@ -1,22 +1,32 @@
 <x-layouts.app>
-    <section class="breadcrumbs">
-        <div class="container">
-  
-          <div class="d-flex justify-content-between align-items-center">
-            <h2>Ficha Medica</h2>
-            <ol>
-              <li><a href="{{route('welcome')}}">Home</a></li>
-              <li>Ficha</li>
-            </ol>
-          </div>
+    <x-app.breadcrumbs title="Ficha Medica" rutaActual="Ficha" />
 
-          <video id="video" autoplay></video>
-    <button id="capture-btn">Tomar Foto</button>
-    <canvas id="canvas" style="display: none;"></canvas>
-    
+    <section class="inner-page">
+        <div class="container d-flex justify-content-center">
+            <div class="card" style="width: 30rem;">
+                <video id="video" class="card-img-top" autoplay></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text fst-italic fw-bolder">Por favor, tome una foto clara de la zona afectada para
+                        una detección precisa de la enfermedad, ¡Gracias!
+                        <i class="fas fa-smile" style="font-size: 24px; color: rgba(244, 220, 2, 0.877); "></i> <i
+                            class="fas fa-band-aid" style="font-size: 24px; color: red;"></i>
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a id="capture-btn" class="btn btn-primary" href="{{route('ficha.create')}}">Tomar Foto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <script>
         // Acceder al video de la cámara
-        navigator.mediaDevices.getUserMedia({ video: true })
+        navigator.mediaDevices.getUserMedia({
+                video: true
+            })
             .then(function(stream) {
                 var video = document.getElementById('video');
                 video.srcObject = stream;
@@ -41,7 +51,4 @@
             console.log(imageData); // Imprime los datos de la imagen en la consola
         });
     </script>
-  
-        </div>
-      </section>
 </x-layouts.app>
