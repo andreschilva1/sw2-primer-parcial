@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Especialidad;
 use Illuminate\Http\Request;
 
 class FichaController extends Controller
@@ -10,7 +11,14 @@ class FichaController extends Controller
         return view('ficha/index');
     }
 
-    function create(){
-        return view('ficha/create');
+    function create(Request $request){
+        $especialidad = Especialidad::where('nombre', $request->input('especialidad'))->first();
+        $especialidad -> load('doctorespecialidad');
+        $doctorespecialidades = $especialidad -> doctorespecialidad;
+
+        foreach ($doctorespecialidades as $doctor){
+            $doctor -> load('doctor');
+        }
+        return view('ficha/create', ['especialidad' => $especialidad, 'doctores' => $doctorespecialidades]);
     }
 }

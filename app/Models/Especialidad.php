@@ -14,4 +14,8 @@ class Especialidad extends Model
         'nombre',
     ];
 
+    public function doctorEspecialidad()
+    {
+        return $this->hasMany(DoctorEspecialidad::class);
+    }
 }
