@@ -19,23 +19,22 @@
                     <br/>
                     <div class="card-body">
                         <!-- Tendré como resultado de la interpretación de la IA la especialidad que tratará el padecimiento. -->
-                      <h5 class="card-title">Especialidad: Dermatólogo</h5>
+                      <h5 class="card-title">Especialidad: {{ $especialidad }}</h5>
                       <br/>
                       <br/>
                       <p class="card-text">A continuación elija el doctor con el cual será atendido.</p>
                       <br/>
-                        <form>
+                        <form action=" {{ route('factura.create', $doctor_id) }}" method="post">
+                            @csrf
                             <div class="dropdown-center">
                                 <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 Doctor Especialista
                                 </button>
-                                <ul class="dropdown-menu">
-                                    <!-- Aqui debo colocar el resultado de los doctores disponibles según la especialidad resultado-->
-                                <li><a class="dropdown-item" href="#">doctor</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                </ul>
+                                <select class="form-select form-select-lg mb-3" aria-label="Large select example" name="doctor_id">
+                                @foreach($doctor as @doctores)
+                                    <option value="{{ $doctor -> id }}">{{ $doctor -> name }}</option>
+                                @endforeach
+                                </select>
                             </div>
                             <br/>
                             <button type="submit" class="btn btn-success">Agregar</button>
