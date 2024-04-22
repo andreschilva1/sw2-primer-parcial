@@ -14,7 +14,7 @@
                             class="fas fa-band-aid" style="font-size: 24px; color: red;"></i>
                     </p>
                     <div class="d-flex justify-content-center">
-                        <a id="capture-btn" class="btn btn-primary" href="{{route('ficha.create')}}">Tomar Foto</a>
+                        <a id="capture-btn" class="btn btn-primary"{{--  href="{{route('ficha.create')}}" --}}>Tomar Foto</a>
                     </div>
                 </div>
             </div>
@@ -22,33 +22,55 @@
 
     </section>
 
-    <script>
-        // Acceder al video de la cámara
-        navigator.mediaDevices.getUserMedia({
-                video: true
-            })
-            .then(function(stream) {
-                var video = document.getElementById('video');
-                video.srcObject = stream;
-                video.play();
-            })
-            .catch(function(err) {
-                console.log("Error: " + err);
-            });
+    
 
-        // Capturar foto
-        document.getElementById('capture-btn').addEventListener('click', function() {
-            var canvas = document.getElementById('canvas');
-            var video = document.getElementById('video');
-            var context = canvas.getContext('2d');
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+ <script>
+     // Acceder al video de la cámara
+     navigator.mediaDevices.getUserMedia({
+             video: true
+         })
+         .then(function(stream) {
+             var video = document.getElementById('video');
+             video.srcObject = stream;
+             video.play();
+         })
+         .catch(function(err) {
+             console.log("Error: " + err);
+         });
 
-            // Aquí puedes enviar la imagen capturada al servidor usando AJAX o cualquier otro método
-            var imageData = canvas.toDataURL('image/jpeg');
-            console.log(imageData); // Imprime los datos de la imagen en la consola
-        });
-    </script>
+     // Capturar foto
+     document.getElementById('capture-btn').addEventListener('click', function() {
+         var canvas = document.getElementById('canvas');
+         var video = document.getElementById('video');
+         var context = canvas.getContext('2d');
+
+         canvas.width = video.videoWidth;
+         canvas.height = video.videoHeight;
+         context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+         // Aquí puedes enviar la imagen capturada al servidor usando AJAX o cualquier otro método
+         var imageData = canvas.toDataURL('image/jpeg');
+         // enviarImagen(imageData); al servidor con AJAX
+
+
+
+         console.log(imageData); // Imprime los datos de la imagen en la consola
+
+         $.ajax({
+             type: 'POST',
+             url: 'api/sendImage',
+             data: {
+                 imagen: imageData
+             },
+             success: function(response) {
+                 console.log("Imagen enviada correctamente");
+             },
+             error: function(xhr, status, error) {
+                 console.log("Error al enviar la imagen: " + error);
+             }
+         });
+     });
+ </script>
 </x-layouts.app>
