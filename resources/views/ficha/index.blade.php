@@ -10,17 +10,20 @@
                     <h5 class="card-title"></h5>
                     <p class="card-text fst-italic fw-bolder">Por favor, tome una foto clara de la zona afectada para
                         una detección precisa de la enfermedad, ¡Gracias!
-                        <i class="fas fa-smile" style="font-size: 24px; color: rgba(244, 220, 2, 0.877); "></i> <i
-                            class="fas fa-band-aid" style="font-size: 24px; color: red;"></i>
+                        <i class="fas fa-smile" style="font-size: 24px; color: rgba(244, 220, 2, 0.877); "></i> <i class="fas fa-band-aid" style="font-size: 24px; color: red;"></i>
                     </p>
                     <div class="d-flex justify-content-center">
-                        <a id="capture-btn" class="btn btn-primary" href="{{route('ficha.create')}}">Tomar Foto</a>
+                        <a id="capture-btn" class="btn btn-primary" {{--  href="{{route('ficha.create')}}" --}}>Tomar Foto</a>
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
         // Acceder al video de la cámara
@@ -48,7 +51,26 @@
 
             // Aquí puedes enviar la imagen capturada al servidor usando AJAX o cualquier otro método
             var imageData = canvas.toDataURL('image/jpeg');
+            // enviarImagen(imageData); al servidor con AJAX
+
+
+
             console.log(imageData); // Imprime los datos de la imagen en la consola
+
+            $.ajax({
+                type: 'POST',
+                url: 'api/sendImage',
+                data: {
+                    imagen: imageData
+                },
+                success: function(response) {
+                    console.log("Imagen enviada correctamente");
+                    console.log(response);
+                },
+                error: function(xhr, status, error) {
+                    console.log(error, status, xhr);
+                }
+            });
         });
     </script>
 </x-layouts.app>

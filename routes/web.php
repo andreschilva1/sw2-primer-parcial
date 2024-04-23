@@ -24,6 +24,10 @@ Route::get('/ficha', [FichaController::class,'index'])->name('ficha.index');
 
 Route::get('/ficha/create',[FichaController::class,'create'])->name('ficha.create');
 
+Route::post('/ficha',[FichaController::class,'store'])->name('ficha.store');
+
 
 Route::get('/factura', [FacturaController::class,'index'])->name('factura.index');
+
+Route::get('/factura/create',[FacturaController::class,'create'])->name('factura.create');
 
