@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Doctor;
+use App\Models\Enfermedad;
 use App\Models\Especialidad;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Http;
@@ -16,10 +19,11 @@ class FichaController extends Controller
 
     function create(Request $request)
     {
-        dd($request);
+        //dd($request);
 
-        $especialidadData = "Infectologia";
-        $especialidad = Especialidad::where('nombre', $especialidadData)->first();
+        $enfermedad = $request->input('enfermedad');
+        $enfermedad = Enfermedad::where('nombre',$enfermedad )->first();
+        $especialidad = $enfermedad->especialidad;
         $especialidad->load('doctorEspecialidad');
         $doctorespecialidades = $especialidad->doctorespecialidad;
 
@@ -79,5 +83,13 @@ class FichaController extends Controller
 
         // Retornar una respuesta con la ruta de la imagen almacenada y el resultado del análisis
         return response()->json(['message' => 'Imagen almacenada correctamente', 'path' => $nombreImagen, 'analysis' => $response]);
+    }
+
+    function imprimir(Request $request)
+    {
+        $doctor = Doctor::find($request->doctor_id);
+        $especialidad = Especialidad::find($doctor->doctorEspecialidad->first()->especialidades_id);
+        $fecha = Carbon::now();
+        return view('ficha.imprimir', compact('fecha', 'doctor', 'especialidad'));
     }
 }

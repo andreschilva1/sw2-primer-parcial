@@ -2,9 +2,9 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
-            <h1>Welcome to Mimedico</h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
-            <a href="{{ route('ficha.index') }}" class="btn-get-started scrollto">Realizar Consulta</a>
+            <h1>Bienvenido a Mimedico</h1>
+            <h2>Somos un equipo de Doctores talentosos y profesionales .</h2>
+            <a href="{{ route('ficha.index') }}" class="btn-get-started scrollto">Obtener atención médica</a>
         </div>
     </section><!-- End Hero -->
     <!-- ======= Why Us Section ======= -->
@@ -14,15 +14,14 @@
             <div class="row">
                 <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="content">
-                        <h3>Why Choose Mimedico?</h3>
+                        <h3>¿Por qué elegir a Mimedico?</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                            Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
-                            optio ad corporis.
+                            Mimedico ofrece atención médica de calidad, personalizada y centrada en resultados. Nuestro
+                            equipo calificado prioriza tu bienestar. Con servicios innovadores y comunicación
+                            transparente, tu salud está en buenas manos.
                         </p>
                         <div class="text-center">
-                            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                            <a href="#" class="more-btn">Ver Mas <i class="bx bx-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -32,25 +31,25 @@
                             <div class="col-xl-4 d-flex align-items-stretch">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <i class="bx bx-receipt"></i>
-                                    <h4>Corporis voluptates sit</h4>
-                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
-                                        aliquip</p>
+                                    <h4>Profesionales calificados</h4>
+                                    <p>Nuestro equipo médico está formado por expertos altamente cualificados y
+                                        dedicados a tu bienestar.</p>
                                 </div>
                             </div>
                             <div class="col-xl-4 d-flex align-items-stretch">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <i class="bx bx-cube-alt"></i>
-                                    <h4>Ullamco laboris ladore pan</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                        deserunt</p>
+                                    <h4>ecnología innovadora</h4>
+                                    <p>Utilizamos tecnologías de vanguardia y métodos de tratamiento actualizados para
+                                        garantizar la mejor atención posible.</p>
                                 </div>
                             </div>
                             <div class="col-xl-4 d-flex align-items-stretch">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <i class="bx bx-images"></i>
-                                    <h4>Labore consequatur</h4>
-                                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
-                                    </p>
+                                    <h4>tención centrada en el paciente</h4>
+                                    <p>En Mimedico, tú eres nuestra principal prioridad. Nos esforzamos por brindarte
+                                        una atención médica personalizada y centrada en tus necesidades.
                                 </div>
                             </div>
                         </div>
@@ -73,30 +72,31 @@
 
                 <div
                     class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                    <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-                    <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima
-                        temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam
-                        sint et id nulla tenetur. Suscipit aut voluptate.</p>
+                    <h3>Sobre Nosotros</h3>
+                    <p>En Mimedico, nos enorgullecemos de ser líderes en atención médica de calidad. Nuestro equipo de
+                        doctores altamente expertos está comprometido con tu bienestar. Con años de experiencia y
+                        habilidades especializadas, te ofrecemos la mejor atención médica posible. Confía en nosotros
+                        para cuidarte con profesionalismo y dedicación en cada consulta.{{--  --}}</p>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                            excepturi sint occaecati cupiditate non provident</p>
+                        <div class="icon"><i class="bx bx-fingerprint"></i></div>{{--  --}}
+                        <h4 class="title"><a href="">Prioridad en tu Salud</a></h4>
+                        <p class="description">En Mimedico, tu bienestar es nuestra prioridad. Con experiencia y
+                            tecnología avanzada, te ofrecemos atención médica personalizada y de calidad.</p>
                     </div>
 
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                            praesentium voluptatum deleniti atque</p>
+                        <h4 class="title"><a href="">Equipo Profesional</a></h4>
+                        <p class="description">Confía en nuestro equipo experto en Mimedico. Con recursos de última
+                            generación, estamos aquí para cuidarte con atención médica excepcional.</p>
                     </div>
 
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-atom"></i></div>
-                        <h4 class="title"><a href="">Dine Pad</a></h4>
-                        <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis
-                            odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                        <h4 class="title"><a href="">Cuidado Personalizado</a></h4>
+                        <p class="description">En Mimedico, te ofrecemos atención médica adaptada a ti. Nuestro
+                            compromiso es brindarte cuidado personalizado y eficaz para tu salud.</p>
                     </div>
 
                 </div>
@@ -114,36 +114,37 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="count-box">
                         <i class="fas fa-user-md"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
+                        <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p>Doctors</p>
+                        <p>Doctoress</p>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
                     <div class="count-box">
                         <i class="far fa-hospital"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                        <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p>Departments</p>
+                        <p>Departamentos</p>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                     <div class="count-box">
                         <i class="fas fa-flask"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                        <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p>Research Labs</p>
+                        <p>
+                            Laboratorios de Investigación</p>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                     <div class="count-box">
                         <i class="fas fa-award"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                        <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p>Awards</p>
+                        <p>Premios</p>
                     </div>
                 </div>
 
@@ -157,58 +158,65 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Services</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>Servicios</h2>
+                <p>Descubre una gama completa de servicios de atención médica personalizada en Mimedico. Nuestro
+                    compromiso es proporcionarte cuidado integral y de calidad para tu bienestar. Desde consultas
+                    médicas generales hasta tratamientos especializados, estamos aquí para atender todas tus necesidades
+                    de salud con profesionalismo y atención centrada en el paciente.</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                        <h4><a href="">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        <h4><a href="">Salud Mental y Bienestar</a></h4>
+                        <p>Cuida tu salud mental y bienestar emocional con nuestros servicios de psicoterapia,
+                            asesoramiento y apoyo especializado</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-pills"></i></div>
-                        <h4><a href="">Sed ut perspiciatis</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <h4><a href="">Vacunación y Prevención</a></h4>
+                        <p>Protege tu salud y la de tu familia con nuestros servicios de vacunación y programas de
+                            prevención de enfermedades.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-hospital-user"></i></div>
-                        <h4><a href="">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        <h4><a href="">Consultas Médicas Generales</a></h4>
+                        <p>Obtén atención médica de rutina y diagnósticos precisos con nuestros médicos generales
+                            altamente calificados.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-dna"></i></div>
-                        <h4><a href="">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        <h4><a href="">Control de Peso y Nutrición</a></h4>
+                        <p>Recibe orientación personalizada para alcanzar tus objetivos de peso y mejorar tu salud a
+                            través de una nutrición adecuada.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-wheelchair"></i></div>
-                        <h4><a href="">Dele cardo</a></h4>
-                        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                        <h4><a href="">Atención Especializada</a></h4>
+                        <p>Accede a tratamientos especializados y seguimiento experto para condiciones médicas
+                            específicas.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-notes-medical"></i></div>
-                        <h4><a href="">Divera don</a></h4>
-                        <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+                        <h4><a href="">Servicios de Laboratorio</a></h4>
+                        <p>Realiza pruebas diagnósticas y análisis de laboratorio en nuestras instalaciones para un
+                            diagnóstico preciso y rápido.</p>
                     </div>
                 </div>
 
@@ -218,7 +226,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Appointment Section ======= -->
-    <section id="appointment" class="appointment section-bg">
+    {{--  <section id="appointment" class="appointment section-bg">
         <div class="container">
 
             <div class="section-title">
@@ -286,36 +294,34 @@
             </form>
 
         </div>
-    </section><!-- End Appointment Section -->
+    </section><!-- End Appointment Section --> --}}
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
         <div class="container">
 
             <div class="section-title">
-                <h2>Departments</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>Departamentos</h2>
+                <p></p>
             </div>
 
             <div class="row gy-4">
                 <div class="col-lg-3">
                     <ul class="nav nav-tabs flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Cardiology</a>
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Cardiologia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Neurology</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Dermatología</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Hepatology</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Infectología</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Pediatrics</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Pediatria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Eye Care</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Oftalmología</a>
                         </li>
                     </ul>
                 </div>
@@ -324,13 +330,18 @@
                         <div class="tab-pane active show" id="tab-1">
                             <div class="row gy-4">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Cardiology</h3>
-                                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila
-                                        parde sonata raqer a videna mareta paulona marka</p>
-                                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum
-                                        eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat
-                                        minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui
-                                        similique accusamus nostrum rem vero</p>
+                                    <h3>Cardiologia</h3>
+                                    <p class="fst-italic">El departamento de cardiología en Mimedico se dedica al
+                                        cuidado integral del corazón y los vasos sanguíneos. Nuestro equipo de
+                                        cardiólogos altamente especializados está comprometido con la prevención,
+                                        diagnóstico y tratamiento de enfermedades cardiovasculares, tales como
+                                        enfermedad coronaria, hipertensión arterial, insuficiencia cardíaca y arritmias.
+                                        Utilizando tecnología de vanguardia y enfoques basados en la evidencia,
+                                        brindamos atención personalizada para ayudar a nuestros pacientes a mantener la
+                                        salud cardiovascular y disfrutar de una mejor calidad de vida. En Mimedico, tu
+                                        corazón está en buenas manos.
+                                    </p>
+                                    <p></p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
                                     <img src="{{ asset('assets/img/departments-1.jpg') }}" alt=""
@@ -341,13 +352,16 @@
                         <div class="tab-pane" id="tab-2">
                             <div class="row gy-4">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila
-                                        parde sonata raqer a videna mareta paulona marka</p>
-                                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et
-                                        reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit
-                                        ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna
-                                        desera vafle de nideran pal</p>
+                                    <h3>Dermatología</h3>
+                                    <p class="fst-italic">Nuestro departamento de dermatología se centra en el
+                                        diagnóstico y tratamiento de enfermedades de la piel, cabello y uñas, así como
+                                        en la prevención y manejo de problemas estéticos y dermatológicos. Los
+                                        dermatólogos de Mimedico están altamente capacitados para abordar una amplia
+                                        variedad de afecciones dermatológicas, desde el acné y las erupciones cutáneas
+                                        hasta el cáncer de piel. Con un enfoque en la atención personalizada y basada en
+                                        evidencia, estamos comprometidos con mejorar la salud de la piel y la calidad de
+                                        vida de nuestros pacientes.</p>
+                                    <p></p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
                                     <img src="{{ asset('assets/img/departments-2.jpg') }}" alt=""
@@ -358,14 +372,16 @@
                         <div class="tab-pane" id="tab-3">
                             <div class="row gy-4">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim
-                                        fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis
-                                        aut</p>
-                                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis
-                                        quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae
-                                        sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et
-                                        harum voluptatem optio quae</p>
+                                    <h3>Infectología</h3>
+                                    <p class="fst-italic">El departamento de infectología se especializa en el
+                                        diagnóstico, tratamiento y prevención de enfermedades infecciosas. Nuestro
+                                        equipo de infectólogos está dedicado a abordar una amplia gama de patógenos y
+                                        condiciones infecciosas, desde virus y bacterias hasta hongos y parásitos. Con
+                                        un enfoque en la atención integral y multidisciplinaria, trabajamos para
+                                        controlar y prevenir la propagación de infecciones, brindando atención de
+                                        calidad centrada en el paciente y basada en las últimas investigaciones y
+                                        avances médicos.</p>
+                                    <p></p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
                                     <img src="{{ asset('assets/img/departments-3.jpg') }}" alt=""
@@ -376,13 +392,17 @@
                         <div class="tab-pane" id="tab-4">
                             <div class="row gy-4">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas
-                                        iure porro quis delectus</p>
-                                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                                        necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in
-                                        consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a
-                                        laborum inventore</p>
+                                    <h3>Pediatría</h3>
+                                    <p class="fst-italic">En el departamento de pediatría, nos especializamos en la
+                                        atención médica integral de bebés, niños y adolescentes. Nuestro equipo de
+                                        pediatras altamente capacitados está dedicado a promover la salud y el bienestar
+                                        de los pacientes pediátricos, brindando servicios que van desde exámenes de
+                                        rutina y vacunaciones hasta el diagnóstico y tratamiento de enfermedades
+                                        pediátricas comunes y complejas. En Mimedico, entendemos la importancia de la
+                                        atención centrada en el niño y la familia, y nos esforzamos por proporcionar un
+                                        ambiente cálido y acogedor donde los niños puedan sentirse seguros y cómodos.
+                                    </p>
+                                    <p></p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
                                     <img src="{{ asset('assets/img/departments-4.jpg') }}" alt=""
@@ -393,12 +413,16 @@
                         <div class="tab-pane" id="tab-5">
                             <div class="row gy-4">
                                 <div class="col-lg-8 details order-2 order-lg-1">
-                                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.
+                                    <h3>Oftalmología</h3>
+                                    <p class="fst-italic">
                                     </p>
-                                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae
-                                        ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet.
-                                        Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                                    <p>El departamento de oftalmología se especializa en el cuidado integral de la salud
+                                        ocular. Nuestros expertos en oftalmología están dedicados al diagnóstico,
+                                        tratamiento y manejo de una amplia gama de enfermedades oculares, así como a la
+                                        corrección de problemas de visión mediante cirugías y procedimientos
+                                        oftalmológicos avanzados. Desde la detección temprana de enfermedades oculares
+                                        hasta la atención quirúrgica especializada, nuestro equipo está comprometido con
+                                        mantener y mejorar la salud visual de nuestros pacientes.</p>
                                 </div>
                                 <div class="col-lg-4 text-center order-1 order-lg-2">
                                     <img src="{{ asset('assets/img/departments-5.jpg') }}" alt=""
@@ -418,10 +442,8 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Doctors</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>Doctores</h2>
+                <p></p>
             </div>
 
             <div class="row">
@@ -504,7 +526,7 @@
     </section><!-- End Doctors Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
+    {{-- <section id="faq" class="faq section-bg">
         <div class="container">
 
             <div class="section-title">
@@ -594,9 +616,9 @@
 
         </div>
     </section><!-- End Frequently Asked Questions Section -->
-
+ --}}
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    {{-- <section id="testimonials" class="testimonials">
         <div class="container">
 
             <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -697,17 +719,15 @@
             </div>
 
         </div>
-    </section><!-- End Testimonials Section -->
+    </section><!-- End Testimonials Section --> --}}
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery">
         <div class="container">
 
             <div class="section-title">
-                <h2>Gallery</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>Galeria</h2>
+                <p></p>
             </div>
         </div>
 
@@ -792,7 +812,7 @@
     </section><!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    {{-- <section id="contact" class="contact">
         <div class="container">
 
             <div class="section-title">
@@ -805,7 +825,8 @@
 
         <div>
             <iframe style="border:0; width: 100%; height: 350px;"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.3096611937585!2d-63.16647328474438!3d-17.783208987578027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d347dd685e6b9%3A0x634edda1f008d5e1!2sSanta%20Cruz%20de%20la%20Sierra%2C%20Bolivia!5e0!3m2!1sen!2sbo!4v1649669070583!5m2!1sen!2sbo"
+
                 frameborder="0" allowfullscreen></iframe>
         </div>
 
@@ -869,7 +890,7 @@
             </div>
 
         </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End Contact Section --> --}}
 
 
 

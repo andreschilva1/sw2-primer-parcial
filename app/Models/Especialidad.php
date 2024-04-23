@@ -18,4 +18,11 @@ class Especialidad extends Model
     {
         return $this->hasMany(DoctorEspecialidad::class, 'especialidades_id', 'id');
     }
+
+    public function enfermedades()
+    {
+        return $this->hasMany(Enfermedad::class, 'especialidades_id', 'id');
+    }
+
+
 }

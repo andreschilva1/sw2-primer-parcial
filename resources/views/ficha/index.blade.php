@@ -65,7 +65,9 @@
                 },
                 success: function(response) {
                     console.log("Imagen enviada correctamente");
-                    console.log(response);
+                    const enfermedad = response.analysis.enfermedad;
+                    console.log(response.analysis.enfermedad);
+                    window.location.href = '/ficha/create?enfermedad=' + enfermedad;
                 },
                 error: function(xhr, status, error) {
                     console.log(error, status, xhr);
