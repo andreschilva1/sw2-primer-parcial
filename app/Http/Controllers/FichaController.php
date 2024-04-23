@@ -69,6 +69,7 @@ class FichaController extends Controller
         // Realizar la solicitud POST
         $response = Http::post($url, $body);
 
+
         // Obtener la respuesta
         $response = $response->json();
 
