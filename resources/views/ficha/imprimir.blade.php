@@ -1,14 +1,14 @@
 <x-layouts.app>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('assets/css/factura.css') }}">
-    
-    <x-app.breadcrumbs title="Factura" rutaActual="Factura" />
+
+    <x-app.breadcrumbs title="Ficha" rutaActual="Ficha  /  Imprimir" />
 
     <section class="inner-page">
-        <div class="page-content container" id="print-content">
+        <div class="page-content container">
             <div class="page-header text-blue-d2">
                 <h1 class="page-title text-secondary-d1">
-                    Factura
+                    Ficha
                     <small class="page-info">
                         <i class="fa fa-angle-double-right text-80"></i>
                         ID: #111-222
@@ -17,11 +17,12 @@
 
                 <div class="page-tools">
                     <div class="action-buttons">
-                        <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="Print" id="print">
+                        <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="Print"
+                            id="print">
                             <i class="mr-1 fa fa-print text-primary-m1 text-120 w-2"></i>
                             Print
                         </a>
-                        <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="PDF">
+                        <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="PDF" id="export">
                             <i class="mr-1 fa fa-file-pdf-o text-danger-m1 text-120 w-2"></i>
                             Export
                         </a>
@@ -29,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="container px-0">
+            <div class="container px-0" id="print-content">
                 <div class="row mt-4">
                     <div class="col-12 col-lg-12">
                         <div class="row">
@@ -48,17 +49,18 @@
                             <div class="col-sm-6">
                                 <div>
                                     <span class="text-sm text-grey-m2 align-middle">Doctor:</span>
-                                    <span class="text-600 text-110 text-blue align-middle">Alex Doe</span>
+                                    <span class="text-600 text-110 text-blue align-middle">{{ $doctor->nombre }}</span>
                                 </div>
                                 <div class="text-grey-m2">
                                     <div class="my-1">
-                                        Street, City
+                                        <span class="text-sm text-grey-m2 align-middle">Especialidad:</span>
+                                        {{ $especialidad->nombre }}
                                     </div>
                                     <div class="my-1">
-                                        State, Country
+                                        {{ $doctor->direccion }}
                                     </div>
                                     <div class="my-1"><i class="fa fa-phone fa-flip-horizontal text-secondary"></i> <b
-                                            class="text-600">358-57-35</b></div>
+                                            class="text-600">{{ $doctor->telefono }}</b></div>
                                 </div>
                             </div>
                             <!-- /.col -->
@@ -73,7 +75,7 @@
                                             class="text-600 text-90">ID:</span> #111-222</div>
 
                                     <div class="my-2"><i class="fa fa-circle text-blue-m2 text-xs mr-1"></i> <span
-                                            class="text-600 text-90">Fecha: </span>{{$fecha}}</div>
+                                            class="text-600 text-90">Fecha: </span>{{ $fecha }}</div>
 
                                     <div class="my-2"><i class="fa fa-circle text-blue-m2 text-xs mr-1"></i> <span
                                             class="text-600 text-90">Status:</span> <span
@@ -93,37 +95,23 @@
                             </div>
 
                             <div class="text-95 text-secondary-d3">
-                                <div class="row mb-2 mb-sm-0 py-25">
+                                <div class="row mb-2 mb-sm-0 py-25  bgc-default-l4">
                                     <div class="d-none d-sm-block col-1">1</div>
-                                    <div class="col-9 col-sm-5">Domain registration</div>
-                                    <div class="d-none d-sm-block col-2">2</div>
-                                    <div class="d-none d-sm-block col-2 text-95">$10</div>
-                                    <div class="col-2 text-secondary-d2">$20</div>
+                                    <div class="col-9 col-sm-5"> Consulta
+                                        {{ $especialidad->enfermedades->first()->nombre }}</div>
+                                    <div class="d-none d-sm-block col-2">1</div>
+                                    <div class="d-none d-sm-block col-2 text-95">Bs 50</div>
+                                    <div class="col-2 text-secondary-d2">Bs 50</div>
                                 </div>
 
-                                <div class="row mb-2 mb-sm-0 py-25 bgc-default-l4">
+                                {{-- <div class="row mb-2 mb-sm-0 py-25 bgc-default-l4">
                                     <div class="d-none d-sm-block col-1">2</div>
                                     <div class="col-9 col-sm-5">Web hosting</div>
                                     <div class="d-none d-sm-block col-2">1</div>
                                     <div class="d-none d-sm-block col-2 text-95">$15</div>
                                     <div class="col-2 text-secondary-d2">$15</div>
-                                </div>
+                                </div> --}}
 
-                                <div class="row mb-2 mb-sm-0 py-25">
-                                    <div class="d-none d-sm-block col-1">3</div>
-                                    <div class="col-9 col-sm-5">Software development</div>
-                                    <div class="d-none d-sm-block col-2">--</div>
-                                    <div class="d-none d-sm-block col-2 text-95">$1,000</div>
-                                    <div class="col-2 text-secondary-d2">$1,000</div>
-                                </div>
-
-                                <div class="row mb-2 mb-sm-0 py-25 bgc-default-l4">
-                                    <div class="d-none d-sm-block col-1">4</div>
-                                    <div class="col-9 col-sm-5">Consulting</div>
-                                    <div class="d-none d-sm-block col-2">1 Year</div>
-                                    <div class="d-none d-sm-block col-2 text-95">$500</div>
-                                    <div class="col-2 text-secondary-d2">$500</div>
-                                </div>
                             </div>
 
                             <div class="row border-b-2 brc-default-l2"></div>
@@ -158,8 +146,22 @@
 
                             <div class="row mt-3">
                                 <div class="col-12 col-sm-7 text-grey-d2 text-95 mt-2 mt-lg-0">
-                                    Extra note such as company or payment information...
+                                    <div class="my-1">
+                                        <span class="text-sm text-grey-m2 align-middle">Compañia:</span>
+                                        Mimedico
+                                    </div>
+
+                                    <div class="my-1">
+                                        <span class="text-sm text-grey-m2 align-middle">Direccion:</span>
+                                        Av. el trompillo #1071
+                                    </div>
+
+                                    <div class="my-1">
+                                        <i class="fa fa-phone fa-flip-horizontal text-secondary"></i>
+                                        +59165987423
+                                    </div>
                                 </div>
+
 
                                 <div class="col-12 col-sm-5 text-grey text-90 order-first order-sm-last">
                                     <div class="row my-2">
@@ -167,25 +169,25 @@
                                             SubTotal
                                         </div>
                                         <div class="col-5">
-                                            <span class="text-120 text-secondary-d1">$2,250</span>
+                                            <span class="text-120 text-secondary-d1">Bs 50</span>
                                         </div>
                                     </div>
 
                                     <div class="row my-2">
                                         <div class="col-7 text-right">
-                                            Tax (10%)
+                                            Impuestos
                                         </div>
                                         <div class="col-5">
-                                            <span class="text-110 text-secondary-d1">$225</span>
+                                            <span class="text-110 text-secondary-d1">Bs 0</span>
                                         </div>
                                     </div>
 
                                     <div class="row my-2 align-items-center bgc-primary-l3 p-2">
                                         <div class="col-7 text-right">
-                                            Total Amount
+                                            Monto Total
                                         </div>
                                         <div class="col-5">
-                                            <span class="text-150 text-success-d3 opacity-2">$2,475</span>
+                                            <span class="text-150 text-success-d3 opacity-2">Bs 50</span>
                                         </div>
                                     </div>
                                 </div>
@@ -193,17 +195,23 @@
 
                             <hr />
 
-                            <div>
-                                <span class="text-secondary-d1 text-105">Thank you for your business</span>
-                                <a href="#" class="btn btn-info btn-bold px-4 float-right mt-3 mt-lg-0">Pay
-                                    Now</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-end ">
+                <span class="text-secondary-d1 text-105 p-2">Gracias por su visita </span>
+                <a  id="confirmar"
+                    class="btn btn-primary   btn-bold px-4 float-right mt-3 mt-lg-0 p-2">Confirmar</a>
+            </div>
         </div>
     </section>
+
+    <!-- Incluir la biblioteca jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1"></script>
+
 
     <script>
         // imprimir el contenido de un div 
@@ -214,6 +222,41 @@
             window.print();
             document.body.innerHTML = contenidoOriginal;
         });
+        window.jsPDF = window.jspdf.jsPDF;
+
+        function exportToPDF() {
+            // Obtener el contenido del elemento que deseas exportar
+            var contenido = document.getElementById('print-content');
+
+            // Capturar el contenido HTML en una imagen utilizando html2canvas
+            html2canvas(contenido).then(function(canvas) {
+                // Obtener el ancho y alto de la imagen
+                var imgWidth = canvas.width;
+                var imgHeight = canvas.height;
+
+                // Calcular el ancho y alto de la página
+                var pdfWidth = 190; // Ancho de la página en milímetros (A4)
+                var pdfHeight = 297; // Alto de la página en milímetros (A4)
+
+                // Calcular el factor de escala para ajustar la imagen al tamaño de la página
+                var scaleFactor = pdfWidth / imgWidth;
+                var scaledHeight = imgHeight * scaleFactor;
+
+                // Crear un nuevo objeto jsPDF
+                var pdf = new jsPDF('p', 'mm', 'a4');
+
+                // Agregar la imagen al PDF y ajustarla al tamaño de la página
+                pdf.addImage(canvas, 'PNG', 10, 10, pdfWidth, scaledHeight);
+
+                // Descargar el PDF como un archivo
+                pdf.save('ficha.pdf');
+            });
+
+        }
+
+        // Asignar la función exportToPDF al evento 'click' del elemento con id 'export'
+        document.getElementById('export').addEventListener('click', exportToPDF);
+        document.getElementById('confirmar').addEventListener('click', exportToPDF);
     </script>
 
     </x-layouts-app>

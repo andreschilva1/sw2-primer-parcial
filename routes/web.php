@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Routing\RouteAction;
-use App\Http\Controllers\FacturaController;
 use App\Http\Controllers\FichaController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,7 +26,5 @@ Route::get('/ficha/create',[FichaController::class,'create'])->name('ficha.creat
 Route::post('/ficha',[FichaController::class,'store'])->name('ficha.store');
 
 
-Route::get('/factura', [FacturaController::class,'index'])->name('factura.index');
-
-Route::get('/factura/create',[FacturaController::class,'create'])->name('factura.create');
+Route::post('/ficha/imprimir', [FichaController::class,'imprimir'])->name('factura.imprimir');
 

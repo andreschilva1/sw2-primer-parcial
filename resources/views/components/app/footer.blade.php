@@ -10,8 +10,8 @@
               A108 Adam Street <br>
               New York, NY 535022<br>
               United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> +591 756 253 25<br>
+              <strong>Email:</strong> mimedico@gmail.com<br>
             </p>
           </div>
 
@@ -60,7 +60,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Mimedico-free-medical-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://bootstrapmade.com/">Andresinplinplin</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

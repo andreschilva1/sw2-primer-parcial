@@ -13,10 +13,11 @@ class Enfermedad extends Model
     protected $fillable = [
         'nombre',
         'descripcion',
+        'especialidades_id',
     ];
 
     public function especialidad()
     {
-        return $this->belongsTo(Especialidad::class);
+        return $this->belongsTo(Especialidad::class, 'especialidades_id' , 'id');
     }
 }
